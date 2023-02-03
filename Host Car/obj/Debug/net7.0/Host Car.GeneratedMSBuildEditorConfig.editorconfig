@@ -1,0 +1,109 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Host_Car
+build_property.RootNamespace = Host_Car
+build_property.ProjectDir = C:\Users\marsel.agliullin\source\repos\Host Car\Host Car\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\marsel.agliullin\source\repos\Host Car\Host Car
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Car/AllCars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEFsbENhcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Car/MuscleCarShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXE11c2NsZUNhclNob3cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Car/OficeAdress.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXE9maWNlQWRyZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Car/PoorCarShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXFBvb3JDYXJTaG93LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Car/SuperCarShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXFN1cGVyQ2FyU2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Info/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mb1xDb250YWN0VXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Info/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Info/OrderComplete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mb1xPcmRlckNvbXBsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Rent/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudFxDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Rent/Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudFxPcmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Rent/OrderDetailShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudFxPcmRlckRldGFpbFNob3cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Rent/Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudFxQYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Rent/PreOrderSearch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudFxQcmVPcmRlclNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Shared/_CarFilterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJGaWx0ZXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Shared/BackUpForLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEJhY2tVcEZvckxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-kkqilj4qjv
+
+[C:/Users/marsel.agliullin/source/repos/Host Car/Host Car/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-10h5vm688m

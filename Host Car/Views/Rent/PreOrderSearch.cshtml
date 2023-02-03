@@ -1,0 +1,105 @@
+﻿@model Host_Car.Models.PreOrderSearch
+
+<br/> 
+<h1 class="text-white">Search For a Date</h1>
+<br />
+<br />
+
+<style>
+    .container {
+        text-align: center;
+        width: 700px;
+        height: 400px;
+        
+    }
+
+    .col {
+        width: 50%;
+        padding: 15px;
+    }
+
+    .box {
+        width: auto;
+    }
+
+    .table, .th, .td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    .container-button {
+        text-align:center;
+        width: 50%;
+        padding-bottom:4%;
+        padding-top:4%;
+        margin:auto;
+    }
+    .table{
+        width:100%
+    }
+</style>
+
+<hr />
+<div class="row" >
+    <form asp-action="PreOrderSearch">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="container-fluid booking mt-5 pb-5">
+            <div class="container pb-5">
+                <div class="bg-light shadow" style="padding: 30px;">
+                    <div class="row align-items-center" style="min-height: 60px;">
+                        <table>
+                            <tr>
+                                <th style="width:50%;">
+                                    <div class="container-button">
+                                        <label>Adress</label>
+                                        <select asp-for="ConfirmAdressId" asp-items="@ViewBag.Adresses" class="form-control"></select>
+                                    </div>
+                                    <div class="container-button">
+                                        <label>Give back Adress</label>
+                                        <select asp-for="GiveBackAdressId" asp-items="@ViewBag.Adresses" class="form-control">
+                                        </select>
+                                    </div>
+                                </th>
+                                <th style="width:50%">
+                                   @* <div class="row">*@
+                                    <div class="container-button">
+                                        <label asp-for="OrderStartDate" class="control-label"></label>
+                                        <input asp-for="OrderStartDate" class="form-control" aria-required="true"/>
+                                        <span asp-validation-for="OrderStartDate" class="text-danger"></span>
+                                    </div>
+                                    <div class="container-button">
+                                        <label asp-for="OrderEndDate" class="control-label"></label>
+                                        <input asp-for="OrderEndDate" class="form-control" aria-required="true" />
+                                        <span asp-validation-for="OrderEndDate" class="text-danger"></span>
+                                    </div>
+
+                               @*     <div class="container-button ">
+                                        <label asp-for="OrderStartDate" class="control-label"></label>
+                                        <input asp-for="OrderStartDate" class="form-control" aria-required="true" />
+                                        <span asp-validation-for="OrderStartDate" class="text-danger"></span>
+                                    </div>
+                                    <div class="container-button">
+                                        <label asp-for="OrderEndDate" class="control-label"></label>
+                                        <input asp-for="OrderEndDate" class="form-control" aria-required="true" />
+                                        <span asp-validation-for="OrderEndDate" class="text-danger"></span>
+                                    </div>*@
+                                    @*</div>*@
+                                </th>
+                            </tr>
+                        </table>
+                        <div class="container-button">
+                            <input type="submit" value="Rent For" class="btn btn-primary" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="~/js/cascadeadresslist.js"></script>
+}

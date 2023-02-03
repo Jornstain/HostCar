@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] Host CAR</title>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <link href="css/style.css" rel="stylesheet" asp-append-version="true">
+    <link href="img/favicon.ico" rel="icon" asp-append-version="true">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" asp-append-version="true">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet" asp-append-version="true">
+
+    <!--FlatPicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" asp-append-version="true">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" asp-append-version="true">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" asp-append-version="true">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+</head>
+<body class="loaded">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">Host</span>CAR</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a class="nav-link" asp-area="" asp-controller="Rent" asp-action="PreOrderSearch">Rent A Car</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Cars</a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <a class="dropdown-item" asp-controller="Car" asp-action="AllCars">All Cars</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" asp-controller="Car" asp-action="SuperCarShow">Super Car</a>
+                                <a class="dropdown-item" asp-controller="Car" asp-action="PoorCarShow">Poor Car</a>
+                                <a class="dropdown-item" asp-controller="Car" asp-action="MuscleCarShow">Muscle Car</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown" style="color:black">Info</a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <a class="dropdown-item" asp-area="" asp-controller="Info" asp-action="Index">Our Information</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" asp-area="" asp-controller="Info" asp-action="ContactUs">Don't Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <partial name="_LoginPartial" />
+    </nav>
+    <div class="container-fluid page-header" style="background-color:transparent">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+                <h3 class="display-4 text-white text-uppercase"></h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" asp-controller="Rent" asp-action="PreOrderSearch">Home</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <div class="container-fluid py-5" style="padding-bottom:0px">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Reklam</h6>
+                <h1>Explore Best Reklam For You</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" style="height:200px" src="~/Image/ReklamFun/artworks-000195441633-0xcy8e-t500x500.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Here is Your Reklam</h5>
+                            <span>Reklam</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" style="height:200px" src="~/Image/ReklamFun/memeface.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Here is Your Reklam</h5>
+                            <span>Reklam</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" style="height:200px" src="~/Image/ReklamFun/Pink_guy.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Here is Your Reklam</h5>
+                            <span>Reklam</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" style="height:200px" src="~/Image/ReklamFun/Screenshot 2018-01-17 at 03.26.34.png" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Here is Your Reklam</h5>
+                            <span>Reklam</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" style="height:200px" src="~/Image/ReklamFun/Screenshot 2018-01-17 at 03.26.34.png" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Here is Your Reklam</h5>
+                            <span>Reklam</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" style="height:200px" src="~/Image/ReklamFun/Screenshot 2018-01-17 at 03.26.34.png" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Here is Your Reklam</h5>
+                            <span>Reklam</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer class=" footer text-muted">
+        <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+            <div class="row pt-5">
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <a href="" class="navbar-brand">
+                        <h1 class="text-primary"><span class="text-white">Host</span>CAR</h1>
+                    </a>
+                    <p>We don't want u. U can use our servicce to Rent a great cars. Be ready to pay much or die</p>
+                    <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                    <div class="d-flex justify-content-start">
+                        <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white-50 mb-2" asp-controller="Info" asp-action="Index"><i class="fa fa-angle-right mr-2"></i>About</a>
+                        <a class="text-white-50 mb-2" asp-controller="Car" asp-action="AllCars"><i class="fa fa-angle-right mr-2"></i>Cars</a>
+                        <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white-50 mb-2" asp-controller="Info" asp-action="Index"><i class="fa fa-angle-right mr-2"></i>About</a>
+                        <a class="text-white-50 mb-2" asp-controller="Car" asp-action="AllCars"><i class="fa fa-angle-right mr-2"></i>Cars</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services (We Dont Have Them Yet) </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Do not contact US</h5>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+            <div class="row">
+                <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                    <p class="m-0 text-white-50">
+                        Copyright ©  <a asp-area="" asp-controller="Home" asp-action="Privacy">Domain</a>. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Template Javascript -->
+    <script src="~/js/main.js"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" asp-append-version="true"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" asp-append-version="true"></script>
+    <script src="lib/easing/easing.min.js" asp-append-version="true"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js" asp-append-version="true"></script>
+    <script src="lib/tempusdominus/js/moment.min.js" asp-append-version="true"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js" asp-append-version="true"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

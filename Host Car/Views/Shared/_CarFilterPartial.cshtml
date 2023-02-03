@@ -1,0 +1,11 @@
+﻿@model IEnumerable<CarDetail>
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Cars</a>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" asp-controller="Car" asp-action="AllCars">All Cars</a>
+        <a class="dropdown-item" asp-controller="Car" asp-action="SuperCarShow">Super Car</a>
+        <a class="dropdown-item" asp-controller="Car" asp-action="PoorCarShow">Poor Car</a>
+        <a class="dropdown-item" asp-controller="Car" asp-action="MuscleCarShow">Muscle Car</a>
+    </div>
+</li>

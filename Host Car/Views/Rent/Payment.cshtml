@@ -1,0 +1,19 @@
+﻿@model OrderDetail
+@using Microsoft.Extensions.Options
+@inject IOptions<Host_Car.Utility.StripeConfig> Stripe
+
+<html>
+  <head>
+    <title>Rent A Car</title>
+  </head>
+  <body>
+    <form action="/create-checkout-session" method="POST">
+        <div class="row">
+            <h2> Car Name: @Model.Order.CarDetails.CarBrandId </h2>
+            <img src="@Model.Order.CarDetails.CarImage"
+            <small>  Rent Price: @Model.Order.CarDetails.CarPriceId</small>
+        </div>
+      <button type="submit">Pay</button>
+    </form>
+  </body>
+</html>
