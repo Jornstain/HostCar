@@ -48,8 +48,8 @@ namespace Host_Car.Controllers
                 Message = feedback.Message,
             };
 
-            _db.Feedbacks.Add(f);
-             _db.SaveChanges();
+            await  _db.Feedbacks.AddAsync(f);
+            await _db.SaveChangesAsync();
 
 
             return RedirectToAction("PreOrderSearch", "Rent");

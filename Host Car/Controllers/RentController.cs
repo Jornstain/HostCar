@@ -94,12 +94,16 @@ namespace Host_Car.Controllers
                 userId = Guid.NewGuid().ToString();
             }
             var orderSearchId = _db.PreOrderSearchs.FirstOrDefault(i => i.SpecialOrderDetailId != null && i.OrderSearchStatus == "active");
-            var carDetails = _db.CarDetails.ToList().FirstOrDefault(); 
+            var carDetails = _db.CarDetails.ToList().FirstOrDefault();
+            var carDetailsQuantityId = _db.CarDetails.Where(i => i.Id == carId).FirstOrDefault();
             var orderCheck = _db.Orders.FirstOrDefault(i => i.IdentityUserId == userId);
 
             if(carDetails.CarQuantity <= 0)
             {
-               
+                var car = _db.CarDetails.ToList();
+
+                TempData["QuantityError"] = "This Car unavailable";
+                return View(car);
             }
             else
             {
@@ -117,7 +121,7 @@ namespace Host_Car.Controllers
                     //_db.PreOrderSearchs.Update(order);
                     _db.Orders.Add(entity);
                 }
-                orderCheck.CarDetails.CarQuantity -= 1;
+                carDetailsQuantityId.CarQuantity -= 1;
             }
           
            

@@ -8,6 +8,13 @@
 
 <hr />
 
+@if (TempData["QuantityError"] != null)
+{
+
+    <div class="alert alert-danger" id="danger-alert">
+        @TempData["QuantityError"]
+    </div>
+}
 
 
 <div class="row">
@@ -49,198 +56,14 @@
     </form>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@*
-
-<table class="table">
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <form method="post">
-
-
-
-
-        <td>
-            <img src="~/Image/@item.CarImage" width="80%" height="150">
-        </td>
-        <td>
-            <h6> Permited Age</h6>
-                    @item.AgePermission
-        </td>
-        <td>
-            <h6>License Year Perm</h6>
-                    @item.MinimumDriverLicensYear
-        </td>
-        <td>
-            <h6>GearBox Type</h6>
-                    @item.CarTypes.Type
-        </td>
-        <td>
-            <h6>Class</h6>
-                    @item.CarClasses.Class
-        </td>
-        <td>
-            <h6>Fuel</h6>
-                    @item.FuelTypes.Fuel
-        </td>
-        <td>
-            <h6>Brand</h6>
-                    @item.CarBrands.Brand
-        </td>
-        <td>
-            <h6>Model</h6>
-                    @item.CarModels.Model
-        </td>
-        <td>
-            <h6>Year of Model</h6>
-                    @item.CarModels.Years
-        </td>
-        <td>
-            <h6>Online Price</h6>
-                    @item.CarPrices.OnlinePrice.ToString("C")
-        </td>
-        <td>
-            <h6>Price to Adress</h6>
-                    @item.CarPrices.CustomerAdressPrice.ToString("C")
-        </td>
-        <td>
-            <h6>Standart Price</h6>
-                    @item.CarPrices.StandartPrice.ToString("C")
-        </td>
-
-
-
-
-
-
-        <td>
-            <input asp-route-carId="@item.Id" type="submit" value="Rent" />
-        </td>
-
-        </form>
-        }
-    </tbody>
-</table>*@
-
-
-
-@*<div class="row">
-    @*<div class="col-md-4">
-        @foreach (var item in Model)
-
-        {
-            <tr>
-
-                <td>
-                    <img src="~/Image/@item.CarDetails.CarImage" width="80%" height="150">
-                </td>
-                <td>
-                    <h6> Permited Age</h6>
-                    @item.CarDetails.AgePermission
-                </td>
-                <td>
-                    <h6>GearBox Type</h6>
-                    @item.CarDetails.CarTypes.Type
-                </td>
-                <td>
-                    <h6>Class</h6>
-                    @item.CarDetails.CarClasses.Class
-                </td>
-                <td>
-                    <h6>Fuel</h6>
-                    @item.CarDetails.FuelTypes.Fuel
-                </td>
-                <td>
-                    <h6>Brand</h6>
-                    @item.CarDetails.CarBrands.Brand
-                </td>
-                <td>
-                    <h6>item</h6>
-                    @item.CarDetails.CarModels.Model
-                </td>
-                <td>
-                    <h6>Year of item</h6>
-                    @item.CarDetails.CarModels.Years
-                </td>
-                <td>
-                    <h6>Online Price</h6>
-                    @item.CarDetails.CarPrices.OnlinePrice.ToString("C")
-                </td>
-                <td>
-                    <h6>Price to Adress</h6>
-                    @item.CarDetails.CarPrices.CustomerAdressPrice.ToString("C")
-                </td>
-                <td>
-                    <h6>Standart Price</h6>
-                    @item.CarDetails.CarPrices.StandartPrice.ToString("C")
-                </td>
-                <td>
-                </td>
-
-            </tr>
-            }
-        <form asp-action="Order">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-            @*    <label asp-for="UserId" class="control-label"></label>
-                <input asp-for="UserId" class="form-control" />
-                <span asp-validation-for="UserId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CarDetailsId" class="control-label"></label>
-                <select asp-for="CarDetailsId" class ="form-control" asp-items="ViewBag.CarDetailsId"></select>
-                @foreach(var i in Model)
-                {
-                    <div class="form-group">
-                        <label asp-for="@i.OrderDetailsId" class="control-label"></label>
-                        <input asp-for="@i.OrderDetailsId" class="form-control" />
-                        <span asp-validation-for="@i.OrderDetailsId" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="@i.OrderTime" class="control-label"></label>
-                        <input asp-for="@i.OrderTime" class="form-control" />
-                        <span asp-validation-for="@i.OrderTime" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="@i.OrderStatus" class="control-label"></label>
-                        <input asp-for="@i.OrderStatus" class="form-control" />
-                        <span asp-validation-for="@i.OrderStatus" class="text-danger"></span>
-                    </div>
-                }
-            </div>
-
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-*@
-
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+    <script>
+        $("#danger-alert").fadeTo(2000, 500).slideUp(500, function () {
+            $("#danger-alert").slideUp(500);
+        });
+    </script>
+
 }
